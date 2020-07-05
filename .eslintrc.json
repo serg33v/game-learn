@@ -1,0 +1,23 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb"],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "no-console": "off",
+    "comma-dangle": "off",
+    "react/jsx-filename-extension": "off",
+    // Indent with 4 spaces
+    "indent": ["error", 4],
+    // Indent JSX with 4 spaces
+    "react/jsx-indent": ["error", 4],
+    // Indent props with 4 spaces
+    "react/jsx-indent-props": ["error", 4],
+    "no-underscore-dangle":  ["error", { "allow": ["_id", "_account", "_team"] }],
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": ["webpack.dev.js", "webpack.prod.js", "webpack.common.js"]}],
+    "react/state-in-constructor": [1, "never"],
+    "max-len": ["error", { "code": 200 }]
+  }
+}
